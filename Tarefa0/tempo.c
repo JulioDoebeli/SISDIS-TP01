@@ -87,18 +87,15 @@ int main (int argc, char *argv[]) {
                 nodo[token].num_testes = nodo[token].num_testes + 1;
                 executou[token] = 1;
 
-                if ( (status(nodo[Prox].id)) == 0)
-                {
+                if ( (status(nodo[Prox].id)) == 0){
                     printf("   Nodo %d estah sem-falha.\n",Prox);
 
-                    /*if (nodo[Prox].variavel != -1)
+                    if (nodo[Prox].variavel != -1)
                         nodo[token].variavel = nodo[Prox].variavel;
-                    printf("   nodo[%d].variavel = %d\n", token,
-                                                        nodo[token].variavel);*/
+                    printf("   nodo[%d].variavel = %d\n", token, nodo[token].variavel);
 
                     // Pega vetor do nodo testado (vetor de Prox)
-                    for (j=0; j<N; j++)
-                    {
+                    for (j=0; j<N; j++){
                         if (nodo[Prox].ESTADO[j] != -1)
                             nodo[token].ESTADO[j] = nodo[Prox].ESTADO[j];
                     }
@@ -125,8 +122,7 @@ int main (int argc, char *argv[]) {
                         if ( (status(nodo[i].id) == 0) && (executou[i] != 1) )
                             mesma_rodada = 0;
 
-                    if (mesma_rodada)
-                    {
+                    if (mesma_rodada){
                         rodadas = rodadas + 1;
                         mesma_rodada = 0;
                         for (i=0; i<N; i++)
@@ -143,17 +139,14 @@ int main (int argc, char *argv[]) {
                         printf("%d ",nodo[token].TESTED[j]);
                     printf("\n");
 
-                }
-                else
-                {
+                } else {
                     printf("   Nodo %d falho.\n",Prox);
                     /*nodo[token].variavel = Prox;
-                    printf("   nodo[%d].variavel = %d\n", token,
-                                                        nodo[token].variavel);*/
-
+                    printf("   nodo[%d].variavel = %d\n", token, nodo[token].variavel);*/
                     nodo[token].ESTADO[Prox] = 1;
 
                     printf("   ESTADO: ");
+                    
                     for (j=0; j<N; j++)
                         printf("%d ",nodo[token].ESTADO[j]);
                     printf("\n");
