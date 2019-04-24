@@ -46,12 +46,12 @@ Importante: em cada intervalo de testes todos os testadores executam todos os te
 Algoritmo Hi-ADSD executado no nodo i
 
 while(true){
-    for ( s ← 1 até log2 N ) {
+    for ( s=1 ; s<log2(N) ; s++) {
         do {
-            node_to_test := próximo_nodo_em_c(i,s);
-            if( teste(node_to_test) == sem_falha ) 
+            node_to_test = próximo_nodo_em_c(i,s);
+            if ( teste(node_to_test) == sem_falha ) 
                 atualiza_informação_de_diagnóstico_do_cluster();
-            while (node_to_test está sem-falha ou todos os nodos em ci,s estão falhos
+        } while ( teste(node_to_test) == sem_falha  &&  todos_os_nodos_estão_falhos_em_c(i,s) )
             if ( todos_os_nodos_estao_falhos_em_c(i,s) )
                 apaga_informações_de_diagnóstico_do_cluster_c(i,s);
         durma_até_o_proximo_intervalo_de_testes();
@@ -64,7 +64,7 @@ while(true){
 Algoritmo VCube executado no nodo i
 
 while(true){
-    for ( s ← 1 até log2[N] ) {
+    for ( s=1 ; s<log2(N) ; s++ ) {
         for ( todo j ∈ ci,s | i é o primeiro nodo sem falha ∈ cj,s) {
             if( teste(j) == sem-falha ){
                 if ( ti[j] mod 2 = 1 ){
