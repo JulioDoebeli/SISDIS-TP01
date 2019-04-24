@@ -40,7 +40,7 @@ Implemente o algoritmo VCube no ambiente de simulação SMPL, e mostre resultado
 Para a transferência de informações de diagnóstico lembre-se da estratégia do VCube: quando um nodo sem-falha testa outro nodo sem-falha obtém informações sobre "novidades". Basta comparar os vetores STATE para saber se o testado tem alguma novidade.
 
 Importante: em cada intervalo de testes todos os testadores executam todos os testes assinalados.
-//
+```
 1 Algoritmo Hi-ADSD executado no nodo i
 2 repita
 3 para s ← 1 ate´ log2 N fac¸a
@@ -54,4 +54,4 @@ Importante: em cada intervalo de testes todos os testadores executam todos os te
 11 apaga informac¸ ˜oes de diagn´ostico do cluster
 12 durma ate´ o proximo intervalo de testes ´
 13 para sempre
-//
+```
