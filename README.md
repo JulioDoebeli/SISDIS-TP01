@@ -41,7 +41,7 @@ Cada Nodo Sem Falha Mantem vetor de estados e o atualiza com informação de out
 
 
 ## TRABALHO PRÁTICO 1
-Trabalho Prático 1, Algoritmo VCube, Disciplina de Sistemas Distribuídos, UFPR, 1 Semestre de 2019
+Trabalho Prático 1, Algoritmo VCube no ambiente de simulação SMPL, Disciplina de Sistemas Distribuídos, UFPR, 1 Semestre de 2019
 
 ### Especificação 1
 Implemente o algoritmo VCube no ambiente de simulação SMPL, e mostre resultados para diversos valores de N e diversos eventos - um evento de cada vez, um evento só ocorre depois do evento anterior ser diagnosticado. Para cada evento mostre claramente o número de testes executados e a latência para completar o diagnóstico do evento. Cada nodo mantém o vetor STATE[0..N-1] de contadores de eventos, inicializado em -1 (estado unknown). Assume-se que os nodos são inicializados sem-falha, a entrada correspondente ao nodo no vetor STATE[] do testador é setada para zero. Ao descobrir um novo evento em um nodo testado, o testador incrementa a entrada correspondente no vetor STATE[].
