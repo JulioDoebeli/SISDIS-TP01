@@ -31,3 +31,12 @@ Cada Nodo Sem Falha Testa os Seguintes no Anel Sequencialmente até encontrar ou
 Cada Nodo Sem Falha Mantem Localmente um vetor com os estados dos nodos e atualiza o estado com resultado de cada teste próprio. 
 ### Tarefa 4
 Cada Nodo Sem Falha Mantem vetor de estados e o atualiza com informação de outro nodo sem falha após testa-lo.
+
+
+## TRABALHO PRÁTICO 1
+### Especificação
+Implemente o algoritmo VCube no ambiente de simulação SMPL, e mostre resultados para diversos valores de N e diversos eventos - um evento de cada vez, um evento só ocorre depois do evento anterior ser diagnosticado. Para cada evento mostre claramente o número de testes executados e a latência para completar o diagnóstico do evento. Cada nodo mantém o vetor STATE[0..N-1] de contadores de eventos, inicializado em -1 (estado unknown). Assume-se que os nodos são inicializados sem-falha, a entrada correspondente ao nodo no vetor STATE[] do testador é setada para zero. Ao descobrir um novo evento em um nodo testado, o testador incrementa a entrada correspondente no vetor STATE[].
+
+Para a transferência de informações de diagnóstico lembre-se da estratégia do VCube: quando um nodo sem-falha testa outro nodo sem-falha obtém informações sobre "novidades". Basta comparar os vetores STATE para saber se o testado tem alguma novidade.
+
+Importante: em cada intervalo de testes todos os testadores executam todos os testes assinalados.
