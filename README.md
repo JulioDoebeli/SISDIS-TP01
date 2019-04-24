@@ -43,15 +43,15 @@ Importante: em cada intervalo de testes todos os testadores executam todos os te
 ```
 Algoritmo Hi-ADSD executado no nodo i
 repita
-  para s ← 1 ate´ log2 N fac¸a
-  repita
-    node to test := pr´oximo nodo em ci,s
-    teste(node to test)
-    se node to test esta´ sem-falha entao˜
-      atualiza informac¸ ˜ao de diagn´ostico do cluster
-      ate´ node to test esta´ sem-falha ou todos os nodos em ci,s estao falhos ˜
-    se todos os nodos em ci,s estao falhos ˜ entao˜
-      apaga informac¸ ˜oes de diagn´ostico do cluster
-    durma ate´ o proximo intervalo de testes ´
+    para s ← 1 até log2 N faça
+    repita
+        node to test := pr´oximo nodo em ci,s
+        teste(node to test)
+        se node to test está sem-falha então
+            atualiza informação de diagnóstico do cluster
+            até node to test está sem-falha ou todos os nodos em ci,s estão falhos
+        se todos os nodos em ci,s estao falhos ˜ então˜
+            apaga informações de diagnóstico do cluster
+        durma até o proximo intervalo de testes
 para sempre
 ```
