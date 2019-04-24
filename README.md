@@ -44,6 +44,7 @@ Importante: em cada intervalo de testes todos os testadores executam todos os te
 ### Algoritmo Hi-ADSD
 ```
 Algoritmo Hi-ADSD executado no nodo i
+
 while(true){
     for ( s ← 1 até log2 N ) {
         do {
@@ -61,6 +62,7 @@ while(true){
 ### Algoritmo VCube
 ```
 Algoritmo VCube executado no nodo i
+
 while(true){
     for ( s ← 1 até log2[N] ) {
         for ( todo j ∈ ci,s | i é o primeiro nodo sem falha ∈ cj,s) {
