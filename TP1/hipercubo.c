@@ -10,7 +10,7 @@ main(int argc, char** argv)
 
 	/* checking syntax */
 	if (argc <= 1) {
-		printf(\"{u}sage: %s dimensions [vertex]\n", argv[0]);
+		printf("{u}sage: %s dimensions [vertex]\n", argv[0]);
 		return 1;
 	}
 
