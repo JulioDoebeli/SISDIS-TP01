@@ -40,18 +40,43 @@ Implemente o algoritmo VCube no ambiente de simulação SMPL, e mostre resultado
 Para a transferência de informações de diagnóstico lembre-se da estratégia do VCube: quando um nodo sem-falha testa outro nodo sem-falha obtém informações sobre "novidades". Basta comparar os vetores STATE para saber se o testado tem alguma novidade.
 
 Importante: em cada intervalo de testes todos os testadores executam todos os testes assinalados.
+
+### Algoritmo Hi-ADSD
 ```
 Algoritmo Hi-ADSD executado no nodo i
-repita
-    para s ← 1 até log2 N faça
-    repita
-        node to test := pr´oximo nodo em ci,s
-        teste(node to test)
-        se node to test está sem-falha então
-            atualiza informação de diagnóstico do cluster
-            até node to test está sem-falha ou todos os nodos em ci,s estão falhos
-        se todos os nodos em ci,s estao falhos ˜ então˜
-            apaga informações de diagnóstico do cluster
-        durma até o proximo intervalo de testes
-para sempre
+while(true){
+    for ( s ← 1 até log2 N ) {
+        do {
+            node_to_test := próximo_nodo_em_c(i,s);
+            if( teste(node_to_test) == sem_falha ) 
+                atualiza_informação_de_diagnóstico_do_cluster();
+            while (node_to_test está sem-falha ou todos os nodos em ci,s estão falhos
+            if ( todos_os_nodos_estao_falhos_em_c(i,s) )
+                apaga_informações_de_diagnóstico_do_cluster_c(i,s);
+        durma_até_o_proximo_intervalo_de_testes();
+    }
+}
+```
+
+### Algoritmo VCube
+```
+Algoritmo VCube executado no nodo i
+while(true){
+    for ( s ← 1 até log2[N] ) {
+        for ( todo j ∈ ci,s | i é o primeiro nodo sem falha ∈ cj,s) {
+            if( teste(j) == sem-falha ){
+                if ( ti[j] mod 2 = 1 ){
+                    ti[j] = ti 7 [j] + 1;
+                    obtém_informações_de_diagnóstico();
+                }
+            } 
+            else {
+                if ( ti[j] mod 2 = 0 )
+                    ti[j] = ti 10 [j] + 1;
+            }
+        }
+        durma_até_o_proximo_intervalo_de_testes();
+    }
+}
+
 ```
