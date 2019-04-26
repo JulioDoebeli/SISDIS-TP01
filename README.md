@@ -74,6 +74,7 @@ while(true){
 
 ```
 ### Log 1: "./VCube 1"
+```
 O nodo 0 falhou no tempo   0.0
 Nodo   1 testou:  0 = Falha       ;  todos falharam no cluster  1; 
 =============== +-----+-----+
@@ -87,8 +88,10 @@ Vetor de Status | XX  | 01  |
 Rodadas de testes: 1
    Nodo 0 = 0 testes (0 por rodada)
    Nodo 1 = 1 testes (1 por rodada)
+```
 
 ### Log 2: "./VCube 2"
+```
 O nodo 0 falhou no tempo   0.0
 
 Nodo   1 testou:  0 = Falha       ;  todos falharam no cluster  1;  3 = Sem-Falha,  Obtem Status de:  2; 
@@ -123,8 +126,11 @@ Rodadas de testes: 2
    Nodo 1 = 4 testes (2 por rodada)
    Nodo 2 = 6 testes (3 por rodada)
    Nodo 3 = 4 testes (2 por rodada)
-   
+```
+
+
 ### Log 3: "./VCube 3"
+```
 O nodo 0 falhou no tempo   0.0
 
 Nodo   1 testou:  0 = Falha       ;  todos falharam no cluster  1;  3 = Sem-Falha,  Obtem Status de:  2;  5 = Sem-Falha,  Obtem Status de:  4,  7,  6; 
@@ -206,7 +212,10 @@ Rodadas de testes: 3
    Nodo 5 = 9 testes (3 por rodada)
    Nodo 6 = 9 testes (3 por rodada)
    Nodo 7 = 9 testes (3 por rodada)
+```
+
 ### Log 3: "./VCube 4"
+```
 O nodo 0 falhou no tempo   0.0
 
 Nodo   1 testou:  0 = Falha       ;  todos falharam no cluster  1;  3 = Sem-Falha,  Obtem Status de:  2;  5 = Sem-Falha,  Obtem Status de:  4,  7,  6;  9 = Sem-Falha,  Obtem Status de:  8, 11, 10, 13, 12, 15, 14; 
@@ -354,3 +363,4 @@ Rodadas de testes: 3
    Nodo 13 = 12 testes (4 por rodada)
    Nodo 14 = 12 testes (4 por rodada)
    Nodo 15 = 12 testes (4 por rodada)
+```
