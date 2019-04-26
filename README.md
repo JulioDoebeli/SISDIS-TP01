@@ -9,7 +9,7 @@ Trabalho Prático 0, Simulação do Algoritmo Adaptive-DSD em ambiente SMPL,Disc
 Para a transferência de informações de diagnóstico lembre-se da estratégia do VCube: quando um nodo sem-falha testa outro nodo sem-falha obtém informações sobre "novidades". Basta comparar os vetores STATE para saber se o testado tem alguma novidade.
 
 Importante: em cada intervalo de testes todos os testadores executam todos os testes assinalados.
-#### ## Todos os Arquivos de TP1
+#### ## Todos os Arquivos de TP0
 [Arquivos TP0](http://www.inf.ufpr.br/jcld14/TP0/)
 
 #### Algoritmo Hi-ADSD
