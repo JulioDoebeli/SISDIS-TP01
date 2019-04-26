@@ -52,6 +52,7 @@ Para a transferência de informações de diagnóstico lembre-se da estratégia 
 Importante: em cada intervalo de testes todos os testadores executam todos os testes assinalados.
 
 #### Algoritmo VCube
+[vcube.c.txt](http://www.inf.ufpr.br/jcld14/vcube.c.txt)
 ```
 Algoritmo VCube executado no nodo i
 
@@ -75,6 +76,7 @@ while(true){
 
 ```
 ### Log 1: "./VCube 1"
+[Log1.txt](http://www.inf.ufpr.br/jcld14/log1.txt)
 ```
 O nodo 0 falhou no tempo   0.0
 Nodo   1 testou:  0 = Falha       ;  todos falharam no cluster  1; 
@@ -92,6 +94,7 @@ Rodadas de testes: 1
 ```
 
 ### Log 2: "./VCube 2"
+[Log2.txt](http://www.inf.ufpr.br/jcld14/log2.txt)
 ```
 O nodo 0 falhou no tempo   0.0
 
@@ -131,6 +134,7 @@ Rodadas de testes: 2
 
 
 ### Log 3: "./VCube 3"
+[Log3.txt](http://www.inf.ufpr.br/jcld14/Log3.txt)
 ```
 O nodo 0 falhou no tempo   0.0
 
@@ -215,7 +219,8 @@ Rodadas de testes: 3
    Nodo 7 = 9 testes (3 por rodada)
 ```
 
-### Log 3: "./VCube 4"
+### Log 4: "./VCube 4"
+[Log4.txt](http://www.inf.ufpr.br/jcld14/Log4.txt)
 ```
 O nodo 0 falhou no tempo   0.0
 
